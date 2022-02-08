@@ -4,11 +4,11 @@
 import threading
 import time
 from concurrent import futures
+from bili import headers, connect, logger
 
 import pymysql
 import requests
 
-from bili import headers, connect, logger
 
 conn = pymysql.connect(**connect)
 cur = conn.cursor()
